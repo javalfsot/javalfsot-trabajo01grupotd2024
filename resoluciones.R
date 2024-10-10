@@ -2,11 +2,10 @@
 
 
 
-# Problemas tabla de decisión --------------------------------------------------
+# PROBLEMAS TABLA DE DECISIÓN --------------------------------------------------
 
 
-## Problema I ------------------------------------------------------------------
-
+## PROBLEMA I ------------------------------------------------------------------
 
 ### Enunciado I ----------------------------------------------------------------
 
@@ -117,10 +116,11 @@ solucion(criterio.PuntoIdeal(tabla_1, favorable = F))
 solucion(criterio.Savage(tabla_1, favorable = F))
 
 
-## Problema II ------------------------------------------------------------------
 
+## PROBLEMA II ------------------------------------------------------------------
 
 ### Enunciado II ----------------------------------------------------------------
+
 # Sea la tabla de decisión con 4 estados de la naturaleza y 5 alternativas de
 # la siguiente forma:
 #                           e1  e2  e3  e4   
@@ -138,16 +138,99 @@ solucion(criterio.Savage(tabla_1, favorable = F))
 
 source("teoriadecision_funciones_incertidumbre.R")
 
-tabla_3=crea.tablaX(c(6,9,4,6,
+tabla_2=crea.tablaX(c(6,9,4,6,
                  5,5,6,5,
                  6,6,6,8,
                  6,8,6,6,
-                 5,8,9,15)
+                 5,8,9,15),
                numalternativas = 5,
                numestados = 4)
-tabla_3
+tabla_2
 
 ## Utilizaremos la función solucion creada para el problema 1
+
+#### Favorables ----------------------------------------------------------------
+
+##### Hurwicz ------------------------------------------------------------------
+
+solucion(criterio.Hurwicz(tabla_2))
+
+##### Hurwicz General ----------------------------------------------------------
+
+solucion(criterio.Hurwicz.General(tabla_2))
+
+##### Laplace ------------------------------------------------------------------
+
+solucion(criterio.Laplace(tabla_2))
+
+##### Optimista ----------------------------------------------------------------
+
+solucion(criterio.Optimista(tabla_2))
+
+##### PuntoIdeal ---------------------------------------------------------------
+
+solucion(criterio.PuntoIdeal(tabla_2))
+
+##### Savage -------------------------------------------------------------------
+
+solucion(criterio.Savage(tabla_2))
+
+
+#### Desfavorables -------------------------------------------------------------
+
+
+##### Hurwicz ------------------------------------------------------------------
+
+solucion(criterio.Hurwicz(tabla_2, favorable = F))
+
+##### Hurwicz General ----------------------------------------------------------
+
+solucion(criterio.Hurwicz.General(tabla_2, favorable = F))
+
+##### Laplace ------------------------------------------------------------------
+
+solucion(criterio.Laplace(tabla_2, favorable = F))
+
+##### Optimista ----------------------------------------------------------------
+
+solucion(criterio.Optimista(tabla_2, favorable = F))
+
+##### PuntoIdeal ---------------------------------------------------------------
+
+solucion(criterio.PuntoIdeal(tabla_2, favorable = F))
+
+##### Savage -------------------------------------------------------------------
+
+solucion(criterio.Savage(tabla_2, favorable = F))
+
+
+
+## PROBLEMA III ----------------------------------------------------------------
+
+### Enunciado III --------------------------------------------------------------
+
+# A partir de la siguiente tabla de decisión, aplicar los métodos de decisión bajo 
+# incertidumbre por separados, tanto para el caso favorable (beneficios) como para 
+# el caso desfavorable (costos).
+
+#                                      e1  e2  e3
+#                                 d1 | 30  50  20
+#                                 d2 | 40  60  10
+#                                 d3 | 10  70  30
+#                                 d4 | 50  40  40
+
+
+### Solución III ---------------------------------------------------------------
+
+source("teoriadecision_funciones_incertidumbre.R")
+
+tabla_3 = crea.tablaX(c(30,50,20,
+                        40,60,10,
+                        10,70,30,
+                        50,40,40), numalternativas = 4, numestados = 3)
+tabla_3
+
+## Utilizaremos la función solución creada para el problema 1
 
 #### Favorables ----------------------------------------------------------------
 
@@ -204,11 +287,12 @@ solucion(criterio.PuntoIdeal(tabla_3, favorable = F))
 solucion(criterio.Savage(tabla_3, favorable = F))
 
 
-# Problemas situación real -----------------------------------------------------
 
 
-## Problema V -----------------------------------------------------------------
+# PROBLEMAS SITUACIÓN REAL -----------------------------------------------------
 
+
+## PROBLEMA V -----------------------------------------------------------------
 
 ### Enunciado V ---------------------------------------------------------------
 
@@ -243,16 +327,16 @@ solucion(criterio.Savage(tabla_3, favorable = F))
 
 # Primero, creamos la matriz del problema.
 
-tabla_2 <- crea.tablaX(c( 25, 35, 50, 70,
+tabla_5 <- crea.tablaX(c( 25, 35, 50, 70,
                           15, 45, 55, 65, 
                           20, 40, 45, 80),
                        numalternativas = 3,
                        numestados = 4)
-tabla_2
+tabla_5
 
 # Resolvemos mediante todos los métodos a la vez.
 
-criterio.Todos(tabla_2, alfa = 0.5)
+criterio.Todos(tabla_5, alfa = 0.5)
 
 # Vemos que las alternativas óptimas son la 1 ó la 3.
 #
@@ -270,8 +354,8 @@ criterio.Todos(tabla_2, alfa = 0.5)
 # por todos los métodos.
 
 
-## Problema VI -----------------------------------------------------------------
 
+## PROBLEMA VI -----------------------------------------------------------------
 
 ### Enunciado VI ---------------------------------------------------------------
 
@@ -293,19 +377,82 @@ criterio.Todos(tabla_2, alfa = 0.5)
 
 # Primero, creamos la matriz del problema.
 
-tabla_4=crea.tablaX(c(67200,61200,61200,61200,
+tabla_6=crea.tablaX(c(67200,61200,61200,61200,
                       54600,48600,51600,54600,
                       48300,42300,48300,48300,
                       58800,52800,52800,57300,
                       52500,49500,49500,49500),
                     numalternativas = 5,numestados = 4)
-colnames(tabla_4)=c('sin máster','máster año 0','máster año 1','máster año 2')
-rownames(tabla_4)=c('pequeña consultora','Deloitte','EY','KPMG','PWC')
-tabla_4
+colnames(tabla_6)=c('sin máster','máster año 0','máster año 1','máster año 2')
+rownames(tabla_6)=c('pequeña consultora','Deloitte','EY','KPMG','PWC')
+tabla_6
 
 # Resolvemos mediante todos los métodos a la vez.
 
-criterio.Todos(tabla_4, alfa = 0.5)
+criterio.Todos(tabla_6, alfa = 0.5)
 
 # Según todos los criterios, José Ignacio debería elegir la pequeña consultora, por
 # lo que no hay duda de que esa debe ser la alternativa tomada.
+
+
+
+## PROBLEMA VII -----------------------------------------------------------------
+
+### Enunciado VII ---------------------------------------------------------------
+
+# Una empresa manufacturera necesita seleccionar un proveedor de materiales para un 
+# proyecto importante. Existen tres proveedores (A, B y C), y la elección afectará 
+# tanto el costo como la calidad de los materiales recibidos, lo que influirá en la 
+# rentabilidad total del proyecto. Sin embargo, debido a la incertidumbre en el 
+# mercado y factores externos como la disponibilidad de materiales y fluctuaciones 
+# de precios, el rendimiento de cada proveedor puede variar según tres posibles 
+# escenarios económicos: favorable, moderado o desfavorable.
+# 
+# - En un escenario favorable, el proveedor A ofrece el mayor rendimiento en términos 
+#   de rentabilidad.
+# 
+# - En un escenario moderado, el proveedor B es más confiable en términos de calidad 
+#   y tiempo de entrega, lo que minimiza los costos de producción.
+# 
+# - En un escenario desfavorable, el proveedor C, aunque menos rentable en otros 
+#   escenarios, logra mantener precios y tiempos de entrega estables, por lo que es 
+#   el de menos riesgo.
+# 
+# La empresa ha estimado el rendimiento (en miles de euros) que cada proveedor 
+# ofrecería en cada uno de los escenarios económicos:
+#
+#                    Esc.favorable  Esc.moderado  Esc.desfavorable
+#       Proveedor A |    80             40              10
+#       Proveedor B |    70             50              20
+#       Proveedor C |    60             30              25
+#
+# La empresa busca maximizar su rendimiento, pero también desea evitar pérdidas 
+# significativas en caso de que se presente un escenario económico desfavorable.
+# Entonces, ¿cuál proveedor debería elegir la empresa para obtener el mejor 
+# rendimiento en condiciones de incertidumbre?
+#
+# Resuelve este problema haciendo uso de la función R que devuelve la resolución
+# de todos los métodos en una única tabla.
+
+### Solución VII ----------------------------------------------------------------
+
+# Primero, creamos la matriz del problema.
+
+tabla_7 = crea.tablaX(c(80,40,10,
+                        70,50,20,
+                        60,30,25), numalternativas = 3, numestados = 3)
+tabla_7
+
+# Resolvemos mediante todos los métodos a la vez.
+
+criterio.Todos(tabla_7, favorable = T)
+
+# Podemos ver que según el criterio utilizado aparecen distintas alternativas 
+# óptimas. Para los criterios de Wald y Hurwicz la mejor alternativa será optar por 
+# el Proveedor C, mientras que el criterio optimista indica que la mejor alternativa 
+# sería el Proveedor A. 
+
+# Por otro lado, el resto de criterios (Savage, Laplace y Punto Ideal) coinciden en
+# que la empresa debería elegir el Proveedor B para obtener el mejor rendimiento
+# en un escenario moderado.
+

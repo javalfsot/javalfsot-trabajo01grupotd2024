@@ -9,9 +9,11 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-### PROBLEMAS TABLA DE DECISIÓN
+<br>
 
-##### **Problema 1**
+## PROBLEMAS TABLA DE DECISIÓN
+
+### **Problema 1**
 
 Teniendo la matriz:
 
@@ -32,7 +34,7 @@ Incertidumbre por separado (tanto en situación favorable como desfavorable).
 
 <br>
 
-##### **Problema 2**
+### **Problema 2**
 
 Sea la tabla de decisión con 4 estados de la naturaleza y 5 alternativas de la siguiente forma:
 
@@ -54,7 +56,7 @@ Resolverla tanto para situación favorable como desfavorable, con cada uno de lo
 
 <br>
 
-##### **Problema 3**
+### **Problema 3**
 
 A partir de la siguiente tabla de decisión, aplicar los métodos de decisión bajo 
 incertidumbre por separados, tanto para el caso favorable (beneficios) como para 
@@ -75,7 +77,7 @@ el caso desfavorable (costos).
 
 <br>
 
-##### **Problema 4**
+### **Problema 4**
 Los beneficios esperados (en millones de euros) por una empresa en el año siguiente al lanzamiento de sus productos, en función de la tasa de llegada de internet móvil, son los siguientes:
 
 | Producto                    | Baja (E1) | Media (E2) | Alta (E3) |
@@ -90,9 +92,9 @@ Los beneficios esperados (en millones de euros) por una empresa en el año sigui
 <br>
 <br>
 
-### PROBLEMAS SITUACIÓN REAL
+## PROBLEMAS SITUACIÓN REAL
 
-#### **Problema 5**
+### **Problema 5**
 
 Supongamos que un inversor deportivo debe decidir entre tres posibles
 estrategias a la hora de destinar su dinero en la temporada 24/25 de Dallas
@@ -122,7 +124,7 @@ conclusiones obtenidas.
 
 <br>
 
-#### **Problema 6**
+### **Problema 6**
 José Ignacio está decidiendo con qué empresa firmar su primer contrato. Deloitte
 le paga 1300€ al mes y si se queda dos años, le costean un máster que desearía hacer;
 si lo comienza cuando lleve solo un año, le costean solo la mitad. Por otra parte,
@@ -139,7 +141,7 @@ dinero posible tras 3 años trabajando (14 pagas por año).
 
 <br>
 
-##### **Problema 7**
+### **Problema 7**
 
 Una empresa manufacturera necesita seleccionar un proveedor de materiales para un 
 proyecto importante. Existen tres proveedores (A, B y C), y la elección afectará
@@ -184,7 +186,7 @@ de todos los métodos en una única tabla.
 
 <br>
 
-##### **Problema 8**
+### **Problema 8**
 Supongamos que una empresa debe decidir en cuál de tres proyectos (P1, P2, P3) invertir, pero las condiciones futuras del mercado son inciertas. Existen cuatro posibles escenarios económicos: Recesión (E1), Estabilidad (E2), Crecimiento moderado (E3) y Crecimiento elevado (E4). Los beneficios estimados para cada proyecto, dependiendo del escenario económico, están dados en millones de dólares en la siguiente tabla:
 
 
