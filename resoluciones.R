@@ -117,6 +117,92 @@ solucion(criterio.PuntoIdeal(tabla_1, favorable = F))
 solucion(criterio.Savage(tabla_1, favorable = F))
 
 
+## Problema II ------------------------------------------------------------------
+
+
+### Enunciado II ----------------------------------------------------------------
+# Sea la tabla de decisión con 4 estados de la naturaleza y 5 alternativas de
+# la siguiente forma:
+#                           e1  e2  e3  e4   
+#                      d1    6   9   4   6
+#                      d2    5   5   6   5
+#                      d3    6   6   6   8
+#                      d4    6   8   6   6
+#                      d5    5   8   9  15
+# 
+# Resolverla tanto para situación favorable como desfavorable, con cada uno de los 
+# criterios por separado.
+
+
+### Solución II -----------------------------------------------------------------
+
+source("teoriadecision_funciones_incertidumbre.R")
+
+tabla_3=crea.tablaX(c(6,9,4,6,
+                 5,5,6,5,
+                 6,6,6,8,
+                 6,8,6,6,
+                 5,8,9,15)
+               numalternativas = 5,
+               numestados = 4)
+tabla_3
+
+## Utilizaremos la función solucion creada para el problema 1
+
+#### Favorables ----------------------------------------------------------------
+
+##### Hurwicz ------------------------------------------------------------------
+
+solucion(criterio.Hurwicz(tabla_3))
+
+##### Hurwicz General ----------------------------------------------------------
+
+solucion(criterio.Hurwicz.General(tabla_3))
+
+##### Laplace ------------------------------------------------------------------
+
+solucion(criterio.Laplace(tabla_3))
+
+##### Optimista ----------------------------------------------------------------
+
+solucion(criterio.Optimista(tabla_3))
+
+##### PuntoIdeal ---------------------------------------------------------------
+
+solucion(criterio.PuntoIdeal(tabla_3))
+
+##### Savage -------------------------------------------------------------------
+
+solucion(criterio.Savage(tabla_3))
+
+
+#### Desfavorables -------------------------------------------------------------
+
+
+##### Hurwicz ------------------------------------------------------------------
+
+solucion(criterio.Hurwicz(tabla_3, favorable = F))
+
+##### Hurwicz General ----------------------------------------------------------
+
+solucion(criterio.Hurwicz.General(tabla_3, favorable = F))
+
+##### Laplace ------------------------------------------------------------------
+
+solucion(criterio.Laplace(tabla_3, favorable = F))
+
+##### Optimista ----------------------------------------------------------------
+
+solucion(criterio.Optimista(tabla_3, favorable = F))
+
+##### PuntoIdeal ---------------------------------------------------------------
+
+solucion(criterio.PuntoIdeal(tabla_3, favorable = F))
+
+##### Savage -------------------------------------------------------------------
+
+solucion(criterio.Savage(tabla_3, favorable = F))
+
 
 # Problemas situación real -----------------------------------------------------
 
@@ -182,3 +268,44 @@ criterio.Todos(tabla_2, alfa = 0.5)
 #
 # La segunda estrategia, la de la inversión en infraestructura, queda descartada
 # por todos los métodos.
+
+
+## Problema VI -----------------------------------------------------------------
+
+
+### Enunciado VI ---------------------------------------------------------------
+
+# José Ignacio está decidiendo con qué empresa firmar su primer contrato.
+# Deloitte le paga 1300€ al mes y si se queda dos años, le costean un máster que
+# desearía hacer; si lo comienza cuando lleve solo un año, le costean solo la mitad.
+# Por otra parte, PWC le paga 1250€ al mes, y le costea la mitad del máster desde el
+# primer momento. Una consultora pequeña le paga 1600€ pero no le costea nada del máster.
+# EY le paga 1150€ y le costea el máster al completo si lo comienza cuando lleve al
+# menos un año en la empresa. Finalmente, KPMG le paga 1400€ y le costea el 75% del
+# máster si lo empieza tras llevar dos años en la empresa.
+#
+# Sabiendo que es posible que lo empiece a la vez que el trabajo, al llevar un año
+# en el trabajo, dos años o que finalmente no lo haga, y que el coste del máster es
+# 6000€, plantea un problema de decisión bajo incertidumbre utilizando todos los criterios que conoces
+# de forma que haya obtenido el máximo dinero posible tras 3 años trabajando (14 pagas por año).
+
+### Solución VI ----------------------------------------------------------------
+
+# Primero, creamos la matriz del problema.
+
+tabla_4=crea.tablaX(c(67200,61200,61200,61200,
+                      54600,48600,51600,54600,
+                      48300,42300,48300,48300,
+                      58800,52800,52800,57300,
+                      52500,49500,49500,49500),
+                    numalternativas = 5,numestados = 4)
+colnames(tabla_4)=c('sin máster','máster año 0','máster año 1','máster año 2')
+rownames(tabla_4)=c('pequeña consultora','Deloitte','EY','KPMG','PWC')
+tabla_4
+
+# Resolvemos mediante todos los métodos a la vez.
+
+criterio.Todos(tabla_4, alfa = 0.5)
+
+# Según todos los criterios, José Ignacio debería elegir la pequeña consultora, por
+# lo que no hay duda de que esa debe ser la alternativa tomada.
