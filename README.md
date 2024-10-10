@@ -1,6 +1,14 @@
-Este trabajo ha sido realizado por Ángel Florido Cáceres, Francisco Javier Gala Naranjo, Paula María Galindo Casas y Javier Alfonso Soto.
+# TRABAJO TEORÍA DE LA DECISIÓN
+## Parte en grupo
+En este repositorio encontramos dos ficheros que describimos a continuación: 
+- "enunciados.Rmd": se trata de un archivo R Markdown que recoge un total de ocho enunciados relativos a la Teoría de Decisión bajo Incertidumbre. Los cuatro primeros son tablas de decisión y en los cuatro siguientes se muestra una situación real en la que se busca una conclusión.
+-  "resoluciones.R": aquí se encuentran resueltos los problemas que se enuncian en el archivo anterior y cada uno de ellos termina con una clara conclusión. Para resolverlos hemos usado el archivo “teoriadecision_funciones_incertidumbre.R” donde se importan todas las funciones de resolución, tanto para cada criterio por separado como para mostrar los resultados en una única tabla.
 
-En el repositorio encontramos dos ficheros: enunciado.Rmd, que recoge los ocho enunciados pertinentes (cuatro de tabla y cuatro de situación real) y, por otra parte, resoluciones.R, un
-fichero que junto a los enunciados ya nombrados, explica y concluye las soluciones a estos problemas.
+### Organización
+(pendiente)
 
-QUEDA PENDIENTE LA EXPLICACIÓN SOBRE LA ORGANIZACIÓN
+#### Este trabajo ha sido realizado por: 
+- Ángel Florido Cáceres
+- Francisco Javier Gala Naranjo
+- Paula Mª Galindo Casas
+- Javier Alfonso Soto.
