@@ -1,6 +1,6 @@
 ---
-title: "Enunciados"
-author: "Ángel Florido Cáceres, Francisco Javier Gala Naranjo, Paula María Galindo Casas y Javier Alfonso Soto"
+title: "ENUNCIADOS"
+author: "Ángel Florido Cáceres <br> Francisco Javier Gala Naranjo <br> Paula María Galindo Casas <br> Javier Alfonso Soto"
 date: '9 de octubre de 2024'
 output: html_document
 ---
@@ -9,9 +9,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-### Problemas tabla de decisión 
+### PROBLEMAS TABLA DE DECISIÓN
 
-##### *Problema 1*
+##### **Problema 1**
 
 Teniendo la matriz:
 
@@ -30,7 +30,9 @@ Teniendo la matriz:
 Resuelve el problema con cada uno de los métodos o funciones individuales de
 Incertidumbre por separado (tanto en situación favorable como desfavorable).
 
-##### *Problema 2*
+<br>
+
+##### **Problema 2**
 
 Sea la tabla de decisión con 4 estados de la naturaleza y 5 alternativas de la siguiente forma:
 
@@ -50,10 +52,33 @@ Sea la tabla de decisión con 4 estados de la naturaleza y 5 alternativas de la 
 
 Resolverla tanto para situación favorable como desfavorable, con cada uno de los criterios por separado.
 
+<br>
 
-### Problemas situación real
+##### **Problema 3**
 
-#### *Problema 5*
+A partir de la siguiente tabla de decisión, aplicar los métodos de decisión bajo 
+incertidumbre por separados, tanto para el caso favorable (beneficios) como para 
+el caso desfavorable (costos).
+
+```{=latex}
+\begin{array}{c|ccc}
+
+ & \text{e1} & \text{e2} & \text{e3} \\
+\hline
+\text{d1} &  30  & 50  &  20 \\
+\text{d2} &  40  & 60  &  10 \\
+\text{d3} &  10  & 70  &  30 \\
+\text{d4} &  50  & 40  &  40 \\
+
+\end{array}
+```
+
+<br>
+<br>
+
+### PROBLEMAS SITUACIÓN REAL
+
+#### **Problema 5**
 
 Supongamos que un inversor deportivo debe decidir entre tres posibles
 estrategias a la hora de destinar su dinero en la temporada 24/25 de Dallas
@@ -81,9 +106,56 @@ son las siguientes:
 Resuelve este problema mediante todos los criterios conocidos y explica las
 conclusiones obtenidas.
 
+<br>
 
-#### *Problema 6*
+#### **Problema 6**
 José Ignacio está decidiendo con qué empresa firmar su primer contrato. Deloitte le paga 1300€ al mes y si se queda dos años, le costean un máster que desearía hacer; si lo comienza cuando lleve solo un año, le costean solo la mitad. Por otra parte, PWC le paga 1250€ al mes, y le costea la mitad del máster desde el primer momento. Una consultora pequeña le paga 1600€ pero no le costea nada del máster. EY le paga 1150€ y le costea el máster al completo si lo comienza cuando lleve al menos un año en la empresa. Finalmente, KPMG le paga 1400€ y le costea el 75% del máster si lo empieza tras llevar dos años en la empresa.
 
 Sabiendo que es posible que lo empiece a la vez que el trabajo, al llevar un año en el trabajo, dos años o que finalmente no lo haga, y que el coste del máster es 6000€, plantea un problema de decisión bajo incertidumbre de forma que haya obtenido el máximo dinero posible tras 3 años trabajando (14 pagas por año).
 
+<br>
+
+##### **Problema 7**
+
+Una empresa manufacturera necesita seleccionar un proveedor de materiales para un 
+proyecto importante. Existen tres proveedores (A, B y C), y la elección afectará
+tanto el costo como la calidad de los materiales recibidos, lo que influirá en la
+rentabilidad total del proyecto. Sin embargo, debido a la incertidumbre en el
+mercado y factores externos como la disponibilidad de materiales y fluctuaciones
+de precios, el rendimiento de cada proveedor puede variar según tres posibles
+escenarios económicos: favorable, moderado o desfavorable.
+
+- En un escenario favorable, el proveedor A ofrece el mayor rendimiento en términos
+ de rentabilidad.
+
+- En un escenario moderado, el proveedor B es más confiable en términos de calidad
+ y tiempo de entrega, lo que minimiza los costos de producción.
+
+- En un escenario desfavorable, el proveedor C, aunque menos rentable en otros
+ escenarios, logra mantener precios y tiempos de entrega estables, por lo que es
+ el de menos riesgo.
+
+La empresa ha estimado el rendimiento (en miles de euros) que cada proveedor
+ofrecería en cada uno de los escenarios económicos:
+
+```{=latex}
+\begin{array}{c|ccc}
+
+ & \text{Esc.favorable} & \text{Esc.moderado} & \text{Esc.desfavorable} \\
+\hline
+\text{Proveedor A} &  80  &  40  &  10 \\
+\text{Proveedor B} &  70  &  50  &  20 \\
+\text{Proveedor C} &  60  &  30  &  25 \\
+
+\end{array}
+```
+
+La empresa busca maximizar su rendimiento, pero también desea evitar pérdidas 
+significativas en caso de que se presente un escenario económico desfavorable.
+Entonces, ¿cuál proveedor debería elegir la empresa para obtener el mejor 
+rendimiento en condiciones de incertidumbre?
+
+Resuelve este problema haciendo uso de la función R que devuelve la resolución
+de todos los métodos en una única tabla.
+
+<br>
