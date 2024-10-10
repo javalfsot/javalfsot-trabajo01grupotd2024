@@ -74,6 +74,20 @@ el caso desfavorable (costos).
 ```
 
 <br>
+
+##### **Problema 4**
+Los beneficios esperados (en millones de euros) por una empresa en el año siguiente al lanzamiento de sus productos, en función de la tasa de llegada de internet móvil, son los siguientes:
+
+| Producto                    | Baja (E1) | Media (E2) | Alta (E3) |
+|-----------------------------|-----------|------------|-----------|
+| Reloj inteligente           | 15        | 25         | 35        |
+| Gafas de realidad aumentada | 10        | 30         | 50        |
+| Tablet                      | 20        | 28         | 30        |
+| Ordenador portátil          | 18        | 22         | 27        |
+
+¿Qué producto recomendarías lanzar al mercado si se toman en cuenta los diferentes niveles de recepción de internet móvil? Indica todos los métodos de decisión utilizados para tomar una decisión.
+
+<br>
 <br>
 
 ### PROBLEMAS SITUACIÓN REAL
@@ -169,3 +183,15 @@ Resuelve este problema haciendo uso de la función R que devuelve la resolución
 de todos los métodos en una única tabla.
 
 <br>
+
+##### **Problema 8**
+Supongamos que una empresa debe decidir en cuál de tres proyectos (P1, P2, P3) invertir, pero las condiciones futuras del mercado son inciertas. Existen cuatro posibles escenarios económicos: Recesión (E1), Estabilidad (E2), Crecimiento moderado (E3) y Crecimiento elevado (E4). Los beneficios estimados para cada proyecto, dependiendo del escenario económico, están dados en millones de dólares en la siguiente tabla:
+
+
+| Proyectos | Recesión (E1) | Estabilidad (E2) | Crecimiento moderado (E3) | Crecimiento elevado (E4) |
+|---------------|---------------|---------------|---------------|---------------|
+| P1        | 2             | 6                | 10                        | 12                       |
+| P2        | 4             | 8                | 6                         | 8                        |
+| P3        | -1            | 5                | 15                        | 20                       |
+
+Recomienda a la empresa qué decisión tomar una utilizando varios métodos bajo incertidumbre para analizar la mejor alternativa en función de los posibles escenarios.
