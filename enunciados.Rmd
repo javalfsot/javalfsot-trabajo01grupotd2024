@@ -30,6 +30,27 @@ Teniendo la matriz:
 Resuelve el problema con cada uno de los métodos o funciones individuales de
 Incertidumbre por separado (tanto en situación favorable como desfavorable).
 
+##### *Problema 2*
+
+Sea la tabla de decisión con 4 estados de la naturaleza y 5 alternativas de la siguiente forma:
+
+```{=latex}
+\begin{array}{c|ccccc}
+
+ & \text{e1} & \text{e2} & \text{e3} & \text{e4} \\
+\hline
+\text{d1} &  6  &  9  &  4  &  6 \\
+\text{d2} &  5  &  5  &  6  &  5 \\
+\text{d3} &  6  &  6  &  6  &  8  \\
+\text{d4} &  6  &  8  &  6  &  6  \\
+\text{d5} &  5  &  8  &  9  &  15  \\
+
+\end{array}
+```
+
+Resolverla tanto para situación favorable como desfavorable, con cada uno de los criterios por separado.
+
+
 ### Problemas situación real
 
 #### *Problema 5*
@@ -59,3 +80,10 @@ son las siguientes:
 
 Resuelve este problema mediante todos los criterios conocidos y explica las
 conclusiones obtenidas.
+
+
+#### *Problema 6*
+José Ignacio está decidiendo con qué empresa firmar su primer contrato. Deloitte le paga 1300€ al mes y si se queda dos años, le costean un máster que desearía hacer; si lo comienza cuando lleve solo un año, le costean solo la mitad. Por otra parte, PWC le paga 1250€ al mes, y le costea la mitad del máster desde el primer momento. Una consultora pequeña le paga 1600€ pero no le costea nada del máster. EY le paga 1150€ y le costea el máster al completo si lo comienza cuando lleve al menos un año en la empresa. Finalmente, KPMG le paga 1400€ y le costea el 75% del máster si lo empieza tras llevar dos años en la empresa.
+
+Sabiendo que es posible que lo empiece a la vez que el trabajo, al llevar un año en el trabajo, dos años o que finalmente no lo haga, y que el coste del máster es 6000€, plantea un problema de decisión bajo incertidumbre de forma que haya obtenido el máximo dinero posible tras 3 años trabajando (14 pagas por año).
+
