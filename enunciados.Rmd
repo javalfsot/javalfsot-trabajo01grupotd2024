@@ -78,16 +78,23 @@ el caso desfavorable (costos).
 <br>
 
 ### **Problema 4**
-Los beneficios esperados (en millones de euros) por una empresa en el año siguiente al lanzamiento de sus productos, en función de la tasa de llegada de internet móvil, son los siguientes:
+Se tiene la siguiente matriz de decisión:
+```{=latex}
+\begin{array}{c|ccc}
 
-| Producto                    | Baja (E1) | Media (E2) | Alta (E3) |
-|-----------------------------|-----------|------------|-----------|
-| Reloj inteligente           | 15        | 25         | 35        |
-| Gafas de realidad aumentada | 10        | 30         | 50        |
-| Tablet                      | 20        | 28         | 30        |
-| Ordenador portátil          | 18        | 22         | 27        |
+ & \text{e1} & \text{e2} & \text{e3} \\
+\hline
+\text{d1} &  15  & 25  &  35 \\
+\text{d2} &  10  & 35  &  50 \\
+\text{d3} &  20  & 28  &  30 \\
+\text{d4} &  18  & 22  &  27 \\
 
-¿Qué producto recomendarías lanzar al mercado si se toman en cuenta los diferentes niveles de recepción de internet móvil? Indica todos los métodos de decisión utilizados para tomar una decisión.
+\end{array}
+```
+Aplicar los  distintos métodos de decisión bajo 
+incertidumbre para resolver el problema, tanto para el caso favorable (beneficios) como para 
+el caso desfavorable (costos).
+
 
 <br>
 <br>
@@ -187,13 +194,18 @@ de todos los métodos en una única tabla.
 <br>
 
 ### **Problema 8**
-Supongamos que una empresa debe decidir en cuál de tres proyectos (P1, P2, P3) invertir, pero las condiciones futuras del mercado son inciertas. Existen cuatro posibles escenarios económicos: Recesión (E1), Estabilidad (E2), Crecimiento moderado (E3) y Crecimiento elevado (E4). Los beneficios estimados para cada proyecto, dependiendo del escenario económico, están dados en millones de dólares en la siguiente tabla:
+Supongamos que una empresa debe decidir en cuál de tres proyectos (P1, P2, P3) invertir, pero las condiciones futuras del mercado son inciertas. Existen cuatro posibles escenarios económicos: Recesión, Estabilidad, Crecimiento moderado y Crecimiento elevado. Los beneficios estimados para cada proyecto, dependiendo del escenario económico, están dados en millones de dólares en la siguiente tabla:
 
+```{=latex}
+\begin{array}{c|ccccc}
 
-| Proyectos | Recesión (E1) | Estabilidad (E2) | Crecimiento moderado (E3) | Crecimiento elevado (E4) |
-|---------------|---------------|---------------|---------------|---------------|
-| P1        | 2             | 6                | 10                        | 12                       |
-| P2        | 4             | 8                | 6                         | 8                        |
-| P3        | -1            | 5                | 15                        | 20                       |
+ & \text{Recesión} & \text{Estabilidad} & \text{Crecimiento moderado} & \text{Crecimiento elevado} \\
+\hline
+\text{d1} &  2  &  6  &  10  &  12 \\
+\text{d2} &  4  &  8  &  6  &  8 \\
+\text{d3} &  -1  &  5  &  15  &  20  \\
+
+\end{array}
+```
 
 Recomienda a la empresa qué decisión tomar una utilizando varios métodos bajo incertidumbre para analizar la mejor alternativa en función de los posibles escenarios.
