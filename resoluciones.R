@@ -562,7 +562,7 @@ criterio.Todos(tabla_7, favorable = T)
 
 # Primero, creamos la matriz del problema.
 
-tabla_8 = crea.tablaX((2, 6, 10, 12,  
+tabla_8 = crea.tablaX(c(2, 6, 10, 12,  
                        4, 8, 6, 8,     
                        -1, 5, 15, 20) , numalternativas = 3, numestados = 4)
 tabla_8
