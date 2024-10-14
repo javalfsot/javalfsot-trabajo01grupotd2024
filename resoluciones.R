@@ -24,7 +24,7 @@ source("teoriadecision_funciones_incertidumbre.R")
 
 tabla_1 <- crea.tablaX(c( 9, 11, 6, 3, 12,
                           4,  2, 8, 7, 13, 
-                         10,  1, 4, 8,  7),
+                          10,  1, 4, 8,  7),
                        numalternativas = 3,
                        numestados = 5)
 tabla_1
@@ -53,15 +53,16 @@ solucion <- function (x) {
     cat(opt_sol, ".")
   }
   else {
-    if(n_sol==2){
+    if(n_sol == 2){
       cat(opt_sol[1]," y ",opt_sol[2],".")
-    } else {
+    }
+    else {
       for (i in 1:(n_sol-2)){
         cat(opt_sol[i],", ")}
-    cat(opt_sol[n_sol-1], " y ",opt_sol[n_sol],".")
-    }
+      cat(opt_sol[n_sol-1], " y ",opt_sol[n_sol],".")
     }
   }
+}
 
 #### Favorables ----------------------------------------------------------------
 
@@ -88,6 +89,10 @@ solucion(criterio.PuntoIdeal(tabla_1))
 ##### Savage -------------------------------------------------------------------
 
 solucion(criterio.Savage(tabla_1))
+
+##### Wald -------------------------------------------------------------------
+
+solucion(criterio.Wald(tabla_1))
 
 
 #### Desfavorables -------------------------------------------------------------
@@ -117,6 +122,9 @@ solucion(criterio.PuntoIdeal(tabla_1, favorable = F))
 
 solucion(criterio.Savage(tabla_1, favorable = F))
 
+##### Wald -------------------------------------------------------------------
+
+solucion(criterio.Wald(tabla_1, favorable = F))
 
 
 ## PROBLEMA II ------------------------------------------------------------------
@@ -141,12 +149,12 @@ solucion(criterio.Savage(tabla_1, favorable = F))
 source("teoriadecision_funciones_incertidumbre.R")
 
 tabla_2=crea.tablaX(c(6,9,4,6,
-                 5,5,6,5,
-                 6,6,6,8,
-                 6,8,6,6,
-                 5,8,9,15),
-               numalternativas = 5,
-               numestados = 4)
+                      5,5,6,5,
+                      6,6,6,8,
+                      6,8,6,6,
+                      5,8,9,15),
+                    numalternativas = 5,
+                    numestados = 4)
 tabla_2
 
 ## Utilizaremos la función solucion creada para el problema 1
@@ -303,6 +311,10 @@ solucion(criterio.PuntoIdeal(tabla_3))
 solucion(criterio.Savage(tabla_3))
 # En situación favorable y mediante el criterio de Savage la solución es 1 .
 
+##### Wald -------------------------------------------------------------------
+
+solucion(criterio.Wald(tabla_1))
+
 
 #### Desfavorables -------------------------------------------------------------
 
@@ -336,6 +348,9 @@ solucion(criterio.PuntoIdeal(tabla_3, favorable = F))
 solucion(criterio.Savage(tabla_3, favorable = F))
 # En situación desfavorable y mediante el criterio de Savage la solución es 1 .
 
+##### Wald -------------------------------------------------------------------
+
+solucion(criterio.Wald(tabla_3, favorable = F))
 
 
 
@@ -394,6 +409,10 @@ solucion(criterio.PuntoIdeal(tabla_4))
 
 solucion(criterio.Savage(tabla_4))
 
+##### Wald -------------------------------------------------------------------
+
+solucion(criterio.Wald(tabla_4))
+
 
 #### Desfavorables -------------------------------------------------------------
 
@@ -421,6 +440,10 @@ solucion(criterio.PuntoIdeal(tabla_4, favorable = F))
 ##### Savage -------------------------------------------------------------------
 
 solucion(criterio.Savage(tabla_4, favorable = F))
+
+##### Wald -------------------------------------------------------------------
+
+solucion(criterio.Wald(tabla_4, favorable = F))
 
 
 
@@ -615,8 +638,8 @@ criterio.Todos(tabla_7, favorable = T)
 # Primero, creamos la matriz del problema.
 
 tabla_8 = crea.tablaX(c(2, 6, 10, 12,  
-                       4, 8, 6, 8,     
-                       -1, 5, 15, 20) , numalternativas = 3, numestados = 4)
+                        4, 8, 6, 8,     
+                        -1, 5, 15, 20) , numalternativas = 3, numestados = 4)
 tabla_8
 
 # Resolvemos mediante todos los métodos a la vez.
@@ -624,7 +647,7 @@ tabla_8
 criterio.Todos(tabla_8, favorable = T)
 
 # Solución:
-  
+
 #  -   El Proyecto 3 es la alternativa óptima según los criterios Optimista, Hurwicz, Savage, Laplace y Punto Ideal.
 
 #  -   El Proyecto 2 es la alternativa óptima únicamente según el criterio de Wald.
