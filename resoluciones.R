@@ -232,59 +232,71 @@ tabla_3
 
 ## Utilizaremos la función solución creada para el problema 1
 
+
 #### Favorables ----------------------------------------------------------------
 
 ##### Hurwicz ------------------------------------------------------------------
 
 solucion(criterio.Hurwicz(tabla_3))
+# En situación favorable y mediante el criterio de Hurwicz la solución es 4 .
 
 ##### Hurwicz General ----------------------------------------------------------
 
 solucion(criterio.Hurwicz.General(tabla_3))
+# En situación favorable y mediante el criterio de Hurwicz la solución es 4 .
 
 ##### Laplace ------------------------------------------------------------------
 
 solucion(criterio.Laplace(tabla_3))
+# En situación favorable y mediante el criterio de Laplace la solución es 4 .
 
 ##### Optimista ----------------------------------------------------------------
 
 solucion(criterio.Optimista(tabla_3))
+# En situación favorable y mediante el criterio de Optimista la solución es 3 .
 
 ##### PuntoIdeal ---------------------------------------------------------------
 
 solucion(criterio.PuntoIdeal(tabla_3))
+# En situación favorable y mediante el criterio de Punto Ideal la solución es 4 .
 
 ##### Savage -------------------------------------------------------------------
 
 solucion(criterio.Savage(tabla_3))
+# En situación favorable y mediante el criterio de Savage la solución es 1 .
 
 
 #### Desfavorables -------------------------------------------------------------
 
-
 ##### Hurwicz ------------------------------------------------------------------
 
 solucion(criterio.Hurwicz(tabla_3, favorable = F))
+# En situación desfavorable y mediante el criterio de Hurwicz la solución es 1 .
 
 ##### Hurwicz General ----------------------------------------------------------
 
 solucion(criterio.Hurwicz.General(tabla_3, favorable = F))
+# En situación desfavorable y mediante el criterio de Hurwicz la solución es 1 .
 
 ##### Laplace ------------------------------------------------------------------
 
 solucion(criterio.Laplace(tabla_3, favorable = F))
+# En situación desfavorable y mediante el criterio de Laplace la solución es 1 .
 
 ##### Optimista ----------------------------------------------------------------
 
 solucion(criterio.Optimista(tabla_3, favorable = F))
+# En situación desfavorable y mediante el criterio de Optimista las soluciones son 2 y 3 .
 
 ##### PuntoIdeal ---------------------------------------------------------------
 
 solucion(criterio.PuntoIdeal(tabla_3, favorable = F))
+# En situación desfavorable y mediante el criterio de Punto Ideal la solución es 1 .
 
 ##### Savage -------------------------------------------------------------------
 
 solucion(criterio.Savage(tabla_3, favorable = F))
+# En situación desfavorable y mediante el criterio de Savage la solución es 1 .
 
 
 
@@ -540,6 +552,8 @@ criterio.Todos(tabla_7, favorable = T)
 # Por otro lado, el resto de criterios (Savage, Laplace y Punto Ideal) coinciden en
 # que la empresa debería elegir el Proveedor B para obtener el mejor rendimiento
 # en un escenario moderado.
+
+
 
 ## PROBLEMA VIII -----------------------------------------------------------------
 
