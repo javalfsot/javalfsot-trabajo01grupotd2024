@@ -53,13 +53,15 @@ solucion <- function (x) {
     cat(opt_sol, ".")
   }
   else {
-    for(i in 1:(n_sol-1)) {
-      cat(opt_sol[i], "y ")
+    if(n_sol==2){
+      cat(opt_sol[1]," y ",opt_sol[2],".")
+    } else {
+      for (i in 1:(n_sol-2)){
+        cat(opt_sol[i],", ")}
+    cat(opt_sol[n_sol-1], " y ",opt_sol[n_sol],".")
     }
-    cat(opt_sol[n_sol], ".")
+    }
   }
-  
-}
 
 #### Favorables ----------------------------------------------------------------
 
