@@ -11,4 +11,4 @@ La creación del repositorio y de los ficheros ha sido creada por Javier, respon
 - Ángel Florido Cáceres
 - Francisco Javier Gala Naranjo
 - Paula Mª Galindo Casas
-- Javier Alfonso Soto.
+- Javier Alfonso Soto
