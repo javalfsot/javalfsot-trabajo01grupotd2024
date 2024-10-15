@@ -165,43 +165,29 @@ tabla_2
 
 solucion(criterio.Hurwicz(tabla_2))
 
-# En situación favorable y mediante el criterio de Hurwicz la solución es la alternativa 5 .
-
 ##### Hurwicz General ----------------------------------------------------------
 
 solucion(criterio.Hurwicz.General(tabla_2))
-
-# En situación favorable y mediante el criterio de Hurwicz General la solución es la alternativa 5 .
 
 ##### Laplace ------------------------------------------------------------------
 
 solucion(criterio.Laplace(tabla_2))
 
-# En situación favorable y mediante el criterio de Laplace la solución es la alternativa 5 .
-
 ##### Optimista ----------------------------------------------------------------
 
 solucion(criterio.Optimista(tabla_2))
-
-# En situación favorable y mediante el criterio optimista la solución es la alternativa 5 .
 
 ##### PuntoIdeal ---------------------------------------------------------------
 
 solucion(criterio.PuntoIdeal(tabla_2))
 
-# En situación favorable y mediante el criterio del punto ideal la solución es la alternativa 5 .
-
 ##### Savage -------------------------------------------------------------------
 
 solucion(criterio.Savage(tabla_2))
 
-# En situación favorable y mediante el criterio de Savage la solución es la alternativa 5 .
-
 ##### Wald -------------------------------------------------------------------
 
 solucion(criterio.Wald(tabla_2))
-
-# En situación favorable y mediante el criterio de Wald la solución es la alternativa 3.
 
 
 #### Desfavorables -------------------------------------------------------------
@@ -211,43 +197,29 @@ solucion(criterio.Wald(tabla_2))
 
 solucion(criterio.Hurwicz(tabla_2, favorable = F))
 
-# En situación desfavorable y mediante el criterio de Hurwicz la solución es la alternativa 2 .
-
 ##### Hurwicz General ----------------------------------------------------------
 
 solucion(criterio.Hurwicz.General(tabla_2, favorable = F))
-
-# En situación desfavorable y mediante el criterio de Hurwicz general la solución es la alternativa 2 .
 
 ##### Laplace ------------------------------------------------------------------
 
 solucion(criterio.Laplace(tabla_2, favorable = F))
 
-# En situación desfavorable y mediante el criterio de Laplace la solución es la alternativa 2 .
-
 ##### Optimista ----------------------------------------------------------------
 
 solucion(criterio.Optimista(tabla_2, favorable = F))
-
-# En situación desfavorable y mediante el criterio optimista la solución es la alternativa 2 .
 
 ##### PuntoIdeal ---------------------------------------------------------------
 
 solucion(criterio.PuntoIdeal(tabla_2, favorable = F))
 
-# En situación desfavorable y mediante el criterio del punto ideal la solución es la alternativa 2 .
-
 ##### Savage -------------------------------------------------------------------
 
 solucion(criterio.Savage(tabla_2, favorable = F))
 
-# En situación desfavorable y mediante el criterio de Savage la solución es la alternativa 2 .
-
 ##### Wald -------------------------------------------------------------------
 
 solucion(criterio.Wald(tabla_2,favorable=F))
-
-# En situación desfavorable y mediante el criterio de Wald la solución es la alternativa 2 .
 
 
 
@@ -284,32 +256,26 @@ tabla_3
 ##### Hurwicz ------------------------------------------------------------------
 
 solucion(criterio.Hurwicz(tabla_3))
-# En situación favorable y mediante el criterio de Hurwicz la solución es 4 .
 
 ##### Hurwicz General ----------------------------------------------------------
 
 solucion(criterio.Hurwicz.General(tabla_3))
-# En situación favorable y mediante el criterio de Hurwicz la solución es 4 .
 
 ##### Laplace ------------------------------------------------------------------
 
 solucion(criterio.Laplace(tabla_3))
-# En situación favorable y mediante el criterio de Laplace la solución es 4 .
 
 ##### Optimista ----------------------------------------------------------------
 
 solucion(criterio.Optimista(tabla_3))
-# En situación favorable y mediante el criterio de Optimista la solución es 3 .
 
 ##### PuntoIdeal ---------------------------------------------------------------
 
 solucion(criterio.PuntoIdeal(tabla_3))
-# En situación favorable y mediante el criterio de Punto Ideal la solución es 4 .
 
 ##### Savage -------------------------------------------------------------------
 
 solucion(criterio.Savage(tabla_3))
-# En situación favorable y mediante el criterio de Savage la solución es 1 .
 
 ##### Wald -------------------------------------------------------------------
 
@@ -321,32 +287,26 @@ solucion(criterio.Wald(tabla_1))
 ##### Hurwicz ------------------------------------------------------------------
 
 solucion(criterio.Hurwicz(tabla_3, favorable = F))
-# En situación desfavorable y mediante el criterio de Hurwicz la solución es 1 .
 
 ##### Hurwicz General ----------------------------------------------------------
 
 solucion(criterio.Hurwicz.General(tabla_3, favorable = F))
-# En situación desfavorable y mediante el criterio de Hurwicz la solución es 1 .
 
 ##### Laplace ------------------------------------------------------------------
 
 solucion(criterio.Laplace(tabla_3, favorable = F))
-# En situación desfavorable y mediante el criterio de Laplace la solución es 1 .
 
 ##### Optimista ----------------------------------------------------------------
 
 solucion(criterio.Optimista(tabla_3, favorable = F))
-# En situación desfavorable y mediante el criterio de Optimista las soluciones son 2 y 3 .
 
 ##### PuntoIdeal ---------------------------------------------------------------
 
 solucion(criterio.PuntoIdeal(tabla_3, favorable = F))
-# En situación desfavorable y mediante el criterio de Punto Ideal la solución es 1 .
 
 ##### Savage -------------------------------------------------------------------
 
 solucion(criterio.Savage(tabla_3, favorable = F))
-# En situación desfavorable y mediante el criterio de Savage la solución es 1 .
 
 ##### Wald -------------------------------------------------------------------
 
